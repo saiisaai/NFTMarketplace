@@ -1,4 +1,9 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+
 
 error PriceNotMet(address nftAddress, uint256 tokenId, uint256 price);
 error ItemNotForSale(address nftAddress, uint256 tokenId);
